@@ -59,7 +59,7 @@ case $option in
 
             read -p "Well, Enter the essid of the Network (Network Name): " essid
 
-            sudo crunch 8 $maxpswd abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ123456711q890#@*\_+%^*\(\)_+\][}{\;\:\?/\>\.\,\$\|\'\"\&\<\@ | sudo aircrack-ng $cap -e $essid -w-
+            sudo crunch 8 $maxpswd abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456711q890#@*\_+%^*\(\)_+\][}{\;\:\?/\>\.\,\$\|\'\"\&\<\ \@ | sudo aircrack-ng $cap -e $essid -w-
 		;;
 	2 | wifi2)
 		echo "Option 2 is chosen to crack Wi-Fi Passwords using (GPU)"
@@ -74,7 +74,7 @@ case $option in
             
             read -p "Enter the correct path of hccapx file (*.hccapx): " hccapx
 
-            sudo crunch 8 $maxpswd abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ123456711q890#@*\_+%^*\(\)_+\][}{\;\:\?/\>\.\,\$\|\'\"\&\<\@ | sudo hashcat -m 2500 -d 1 $hccapx --show
+            sudo crunch 8 $maxpswd abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456711q890#@*\_+%^*\(\)_+\][}{\;\:\?/\>\.\,\$\|\'\"\&\<\ \@ | sudo hashcat -m 2500 -d 1 $hccapx --show
 		;;
       3 | custom)
 		    echo "Option 3 is chosen to perform custom attacks"
@@ -89,7 +89,7 @@ case $option in
             
             read -p "Hey Enter the custom command (In the place of wordlist just enter this dash without quotes '-')): " custom
 
-            sudo crunch 8 $maxpswd abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ123456711q890#@*\_+%^*\(\)_+\][}{\;\:\?/\>\.\,\$\|\'\"\&\<\@ | $custom
+            sudo crunch 8 $maxpswd abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456711q890#@*\_+%^*\(\)_+\][}{\;\:\?/\>\.\,\$\|\'\"\&\<\ \@ | $custom
 		;;
 	4 | help)
 		echo "Option 4 is chosen to open manual page"
